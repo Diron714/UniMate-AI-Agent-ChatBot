@@ -1,0 +1,27 @@
+{
+  "include": [
+    "apps/ai"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/node_modules",
+    "**/venv"
+  ],
+  "executionEnvironments": [
+    {
+      "root": "apps/ai",
+      "pythonVersion": "3.13",
+      "pythonPlatform": "Windows",
+      "python": "${workspaceFolder}/apps/ai/venv/Scripts/python.exe",
+      "extraPaths": [
+        "${workspaceFolder}/apps/ai",
+        "${workspaceFolder}/apps/ai/venv/Lib/site-packages",
+        "apps/ai/venv/Lib/site-packages"
+      ]
+    }
+  ],
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": false
+}
+
