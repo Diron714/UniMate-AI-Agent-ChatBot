@@ -13,7 +13,7 @@ from app.config.db import MongoDBConnection
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter()
+router = APIRouter() // router
 
 # Initialize services
 zscore_tool = ZScorePredictTool()
